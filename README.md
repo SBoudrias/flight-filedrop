@@ -1,8 +1,6 @@
-# flight-filedrop
+# flight-filedrop [![Build Status](https://secure.travis-ci.org/SBoudrias/flight-filedrop.png)](http://travis-ci.org/SBoudrias/flight-filedrop)
 
-[![Build Status](https://secure.travis-ci.org/SBoudrias/flight-filedrop.png)](http://travis-ci.org/SBoudrias/flight-filedrop)
-
-A [Flight](https://github.com/flightjs/flight) component for…
+A [Flight](https://github.com/flightjs/flight) component reprensenting a file drop zone. Files dropped on the zone are then loaded as data-URI by default.
 
 ## Installation
 
@@ -11,18 +9,21 @@ bower install --save flight-filedrop
 ```
 
 ## Example
+``` js
 define(function (require) {
-    'use strict';
+  'use strict';
 
-    var dropzone = require('dropzone');
+  var dropzone = require('dropzone');
 
-    return initialize;
+  return initialize;
 
-    function initialize() {
-        dropzone.attachTo('#dropzone');
-    }
+  function initialize() {
+    dropzone.attachTo('#dropzone');
+  }
 });
-…
+```
+
+Provide options to `attachTo` or listen to events to add functionnalities.
 
 ## Events
 
